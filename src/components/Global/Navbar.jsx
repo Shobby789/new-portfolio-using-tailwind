@@ -17,13 +17,13 @@ const Navbar = () => {
     <div
       className={`w-full fixed bg-white py-4 flex justify-between items-center ${styles.paddingHorizontal}`}
     >
-      <Link to="/" className="text-2xl font-semibold">
+      <Link to="/" className="text-xl md:text-2xl font-semibold">
         Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
       </Link>
       <div className="flex items-center gap-x-2 md:gap-x-6">
         <motion.button
           onClick={() => navigate("/contact")}
-          className="border-2 border-black flex items-center justify-center gap-x-1 rounded-full px-3 md:px-6 py-2 text-sm md:text-lg font-semibold hover:bg-black hover:text-white"
+          className="border-2 border-black hidden md:flex items-center justify-center gap-x-1 rounded-full px-2 md:px-6 md:py-2 text-sm md:text-lg font-semibold hover:bg-black hover:text-white"
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
@@ -31,14 +31,14 @@ const Navbar = () => {
         </motion.button>
         <button
           onClick={handleShowSidebar}
-          className="border-2 border-black rounded-2xl px-3 py-2 hover:bg-black hover:text-white transition-all duration-300"
+          className="border-2 border-black rounded-2xl px-3 md:px-5 py-2 md:py-3 hover:bg-black hover:text-white transition-all duration-300"
         >
-          <HiMenu className="text-xl" />
+          <HiMenu className="text-xl md:text-2xl" />
         </button>
       </div>
       {showSidebar && (
         <div className="bg-transparent w-full flex justify-end fixed left-0 top-0 right-0 bottom-0 h-[100vh] transition-all duration-400">
-          <div className="h-full bg-white w-2/5 relative shadow-xl p-4 transition-all duration-400">
+          <div className="h-full bg-white w-3/5 md:w-2/5 relative shadow-xl p-4 transition-all duration-400">
             <button onClick={handleShowSidebar}>
               <IoClose className="text-2xl" />
             </button>
