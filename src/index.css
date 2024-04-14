@@ -53,3 +53,7 @@
     transform: translate(calc(var(--s, 1) * 30px));
   }
 }
+
+.theme-toggler-btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

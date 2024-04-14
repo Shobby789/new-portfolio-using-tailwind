@@ -10,3 +10,9 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+// about me [image, text]
+// services
+// experience
+// education
+// skills
