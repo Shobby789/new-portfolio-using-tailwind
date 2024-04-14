@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 z-10">
       <img src={project?.imageUrl} alt="" className="h-4/5 rounded-3xl" />
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-y-2">
@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
             {project?.description}
           </p>
         </div>
-        <Link to="/">
+        <Link to="/" className="z-0">
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
