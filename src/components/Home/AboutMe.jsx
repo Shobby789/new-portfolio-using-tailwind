@@ -22,21 +22,22 @@ const AboutMe = () => {
             Design that sparks engagement and inpires action
           </h2>
           <div className="flex flex-col items-start justify-center gap-y-2">
-            <p
-              className={`${styles.darkSecondaryText} font-medium text-lg leading-6`}
-            >
+            <p className={`${styles.darkSecondaryText} font-medium text-lg`}>
               I'm a <span className={`font-bold`}>MERN Stack Developer</span>{" "}
               building the Front-end and Back-end of Websites and Web
               Applications that leads to the success of the overall product.
-              Check out some of my work in the Projects section.
+              Check out some of my work in the Projects section. Currently I'm
+              working as a full time{" "}
+              <span className={`font-bold`}>Web Developer</span> at{" "}
+              <span className={`font-bold`}>LaunchBox Pakistan.</span>
             </p>
-            <p
+            {/* <p
               className={`${styles.darkSecondaryText} font-medium text-lg leading-6`}
             >
               Currently I'm working as a full time{" "}
               <span className={`font-bold`}>Web Developer</span> at{" "}
               <span className={`font-bold`}>LaunchBox Pakistan.</span>
-            </p>
+            </p> */}
             <p
               className={`${styles.darkSecondaryText} font-medium text-lg leading-6`}
             >
