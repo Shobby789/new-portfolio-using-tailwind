@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { styles } from "../../styles/styles";
@@ -8,7 +8,14 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const sideRef = useRef();
   const [showSidebar, setShowSidebar] = useState(false);
+
+  const handleDemo = (e) => {
+    if (!sideRef.current.contains(e.target)) {
+      setShowSidebar(!showSidebar);
+    }
+  };
 
   const handleShowSidebar = () => {
     setShowSidebar(!showSidebar);
@@ -36,29 +43,35 @@ const Navbar = () => {
           <HiMenu className="text-xl md:text-2xl" />
         </button>
       </div>
-      {showSidebar && (
-        <div className="bg-transparent w-full flex justify-end fixed left-0 top-0 right-0 bottom-0 h-[100vh] transition-all duration-400">
-          <div className="h-full bg-white w-3/5 md:w-2/5 relative shadow-xl p-4 transition-all duration-400">
-            <button onClick={handleShowSidebar}>
-              <IoClose className="text-2xl" />
-            </button>
-            <div className="pt-6 px-1 w-full flex flex-col items-start justify-start gap-y-4">
-              <Link to="/" className="text-lg font-semibold">
-                Home
-              </Link>
-              <Link to="/about" className="text-lg font-semibold">
-                About
-              </Link>
-              <Link to="/portfolio" className="text-lg font-semibold">
-                Portfolio
-              </Link>
-              <Link to="/contact" className="text-lg font-semibold">
-                Contact
-              </Link>
-            </div>
+      <div
+        className={`bg-transparent w-full flex justify-end fixed top-0 right-0 z-50 h-[100vh] transition-all duration-500 ${
+          showSidebar ? "translate-x-0" : "translate-x-full"
+        }`}
+        onClick={handleShowSidebar}
+      >
+        <div
+          ref={sideRef}
+          className={`h-full bg-white w-3/5 md:w-2/5 relative shadow-xl p-4 z-50`}
+        >
+          <button onClick={handleShowSidebar}>
+            <IoClose className="text-2xl" />
+          </button>
+          <div className="pt-6 px-1 w-full flex flex-col items-start justify-start gap-y-4">
+            <Link to="/" className="text-lg font-semibold">
+              Home
+            </Link>
+            <Link to="/about" className="text-lg font-semibold">
+              About
+            </Link>
+            <Link to="/portfolio" className="text-lg font-semibold">
+              Portfolio
+            </Link>
+            <Link to="/contact" className="text-lg font-semibold">
+              Contact
+            </Link>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };

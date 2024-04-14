@@ -10,7 +10,7 @@ const Experience = () => {
       <h2 className="text-3xl md:text-6xl font-bold flex flex-wrap">
         A visual partner for brands, <br /> companies and agencies
       </h2>
-      <div className="w-full grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {experience.map((experience, index) => {
           return (
             <div className="flex flex-col gap-y-3" key={index}>

@@ -11,11 +11,16 @@ const Header = () => {
         Hey I am Shoaib Muhammad
       </h1>
       <p className={`${styles.secondaryText} font-normal text-lg`}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-        repudiandae. Vel aut dolores fugit hic rem dicta laborum officia commodi
-        delectus, corrupti nesciunt praesentium eius repellat. Maxime dolorum
-        tempore vel ex ipsam repellendus, architecto ab quaerat reprehenderit
-        sint? Veniam, cum!
+        I'm a <span className={`font-bold`}>MERN Stack Developer</span> building
+        the Front-end and Back-end of Websites and Web Applications that leads
+        to the success of the overall product. Check out some of my work in the
+        Projects section. Currently I'm working as a full time{" "}
+        <span className={`font-bold`}>Web Developer</span> at{" "}
+        <span className={`font-bold`}>LaunchBox Pakistan. </span>
+        I'm open to <span className={` font-bold`}>Job</span> opportunities
+        where I can contribute, learn and grow. If you have a good opportunity
+        that matches my skills and experience then don't hesitate to{" "}
+        <span className={`font-bold`}>Contact me.</span>
       </p>
     </div>
   );

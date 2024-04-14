@@ -20,9 +20,9 @@ const Hero = () => {
         </div>
         <div className="col-span-8 leading-6">
           <p className={`${styles.darkSecondaryText} font-medium text-lg`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            earum et quod distinctio maiores rerum repellat assumenda a quia
-            quo!
+            A focused MERN Stack Developer building the Frontend and Backend of
+            Websites and Web Applications that leads to the success of the
+            overall product
           </p>
         </div>
       </div>

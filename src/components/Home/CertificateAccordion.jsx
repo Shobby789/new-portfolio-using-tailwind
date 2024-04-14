@@ -33,7 +33,7 @@ const CertificateAccordion = ({ title, year, description }) => {
       </div>
       {showAccordion && (
         <div
-          className={`transition-all duration-300 text-xl font-normal ${styles.secondaryText}`}
+          className={`transition-all duration-300 text-lg font-normal ${styles.secondaryText}`}
         >
           Some placeholder content for the collapse component. This panel is
           hidden by default but revealed when the user activates the relevant

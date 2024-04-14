@@ -17,7 +17,7 @@ const ProjectsSection = () => {
       </div>
       <div className="w-full flex flex-col items-center justify-center gap-y-2 py-6 md:py-8 lg:py-12">
         <h6 className="text-2xl font-bold">Have an idea?</h6>
-        <h1 className="text-3xl md:text-5xl font-bold">
+        <h1 className="text-3xl md:text-6xl font-bold">
           Let's rock <span className={`${styles.secondaryText}`}>with me</span>
         </h1>
       </div>
