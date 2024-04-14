@@ -1,7 +1,8 @@
 import React from "react";
 import { styles } from "../../styles/styles";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -14,13 +15,15 @@ const ProjectCard = ({ project }) => {
             {project?.description}
           </p>
         </div>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          className="border-2 border-black px-8 py-3 rounded-3xl hover:bg-black hover:text-white hover:border-white"
-        >
-          <FiArrowRight className="text-xl" />
-        </motion.button>
+        <Link to="/">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="border-2 border-black px-8 py-3 rounded-3xl hover:bg-black hover:text-white hover:border-white"
+          >
+            <FiArrowUpRight className="text-xl" />
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

@@ -9,16 +9,16 @@ import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div
-      className={`w-full bg-black text-white ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-12`}
+      className={`w-full bg-black text-white ${styles.paddingHorizontal} py-8 md:py-16 lg:pt-24 lg:pb-20 flex flex-col gap-y-12`}
     >
-      <h2 className="uppercase text-3xl md:text-4xl font-medium">
+      <h2 className="uppercase text-3xl md:text-3xl font-medium">
         Have an idea? let's connect
       </h2>
       <a
-        className={`text-2xl md:text-5xl lg:text-7xl font-bold ${styles.secondaryText}`}
-        href="mailto:smshoaib2001@gmail.com"
+        className={`text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold ${styles.secondaryText}`}
+        href="mailto:shoaibmuhammad.dev@gmail.com"
       >
-        smshoaib2001<span className="text-white">@gmail.com</span>
+        shoaibmuhammad.dev<span className="text-white">@gmail.com</span>
       </a>
       <hr />
       <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-y-0 p-0">

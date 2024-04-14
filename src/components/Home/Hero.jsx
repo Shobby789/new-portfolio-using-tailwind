@@ -10,7 +10,7 @@ const Hero = () => {
     <div
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col gap-y-6 md:gap-y-12`}
     >
-      <h1 className="text-4xl md:text-8xl font-semibold">
+      <h1 className="text-4xl md:text-8xl font-bold">
         I'm a web designer and developer with a passion to create{" "}
         <span className={`${styles.secondaryText}`}>great experiences</span>
       </h1>
