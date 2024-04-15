@@ -5,12 +5,12 @@ import { experience } from "../../constants/experience";
 const Experience = () => {
   return (
     <div
-      className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-12`}
+      className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
       <h2 className="text-3xl md:text-6xl font-bold flex flex-wrap">
         A visual partner for brands, <br /> companies and agencies
       </h2>
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6">
         {experience.map((experience, index) => {
           return (
             <div className="flex flex-col gap-y-3" key={index}>

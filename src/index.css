@@ -57,3 +57,23 @@
 .theme-toggler-btn {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.animate {
+  /* scale: 0.8;
+  opacity: 0; */
+  animation: fade-in linear;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: entry-crossing;
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0.5;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

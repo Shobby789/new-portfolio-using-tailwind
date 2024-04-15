@@ -31,21 +31,21 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="text-xl font-bold uppercase flex items-center justify-center gap-x-1"
+            className="text-lg md:text-xl font-bold uppercase flex items-center justify-center gap-x-1"
           >
             LinkedIn <FiArrowUpRight className="text-2xl" />
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="text-xl font-bold uppercase flex items-center justify-center gap-x-1"
+            className="text-lg md:text-xl font-bold uppercase flex items-center justify-center gap-x-1"
           >
             github <FiArrowUpRight className="text-2xl" />
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="text-xl font-bold uppercase flex items-center justify-center gap-x-1"
+            className="text-lg md:text-xl font-bold uppercase flex items-center justify-center gap-x-1"
           >
             Fiverr <FiArrowUpRight className="text-2xl" />
           </motion.button>
@@ -54,7 +54,7 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="flex items-center justify-center gap-x-1 rounded-full px-3 md:px-6 py-4 text-lg md:text-lg font-semibold bg-black text-white w-40"
+            className="flex items-center animate-bounce justify-center gap-x-1 rounded-full px-3 md:px-6 py-4 text-lg md:text-lg font-semibold bg-black text-white w-40"
           >
             Let's Talk <FiArrowRight />
           </motion.button>

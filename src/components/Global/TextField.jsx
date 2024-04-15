@@ -14,7 +14,7 @@ const TextField = ({ htmlFor, label, type, name, value, placeholder }) => {
         name={name}
         // value={value}
         placeholder={placeholder}
-        className={`outline-none border-b-2 py-3 text-xl font-medium ${styles.secondaryText}`}
+        className={`outline-none border-b-2 py-3 text-lg md:text-xl font-medium ${styles.secondaryText}`}
       />
     </div>
   );

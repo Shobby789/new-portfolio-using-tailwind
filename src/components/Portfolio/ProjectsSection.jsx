@@ -6,7 +6,7 @@ import { styles } from "../../styles/styles";
 const ProjectsSection = () => {
   return (
     <div
-      className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-12`}
+      className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
       <div
         className={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-6`}

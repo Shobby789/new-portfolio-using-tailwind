@@ -38,7 +38,7 @@ const Navbar = () => {
         </motion.button>
         <button
           onClick={handleShowSidebar}
-          className="border-2 border-black rounded-2xl px-3 md:px-5 py-2 md:py-3 bg-white hover:bg-black hover:text-white transition-all duration-300"
+          className="border-2 border-black rounded-xl md:rounded-2xl px-3 md:px-5 py-2 md:py-3 bg-white hover:bg-black hover:text-white transition-all duration-300"
         >
           <HiMenu className="text-xl md:text-2xl" />
         </button>

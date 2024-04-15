@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-col gap-y-4 z-10">
-      <img src={project?.imageUrl} alt="" className="h-4/5 rounded-3xl" />
+    <div className="flex flex-col gap-y-4 z-10 animate">
+      <img src={project?.imageUrl} alt="" className="rounded-3xl" />
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-y-2">
           <h4 className="font-semibold text-2xl">{project?.title}</h4>

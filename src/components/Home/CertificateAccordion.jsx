@@ -16,7 +16,7 @@ const CertificateAccordion = ({ title, year, description }) => {
         onClick={handleShowAccordion}
       >
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-2xl font-bold">{title}</h3>
+          <h3 className="text-[22px] md:text-2xl font-bold">{title}</h3>
           <p className={`${styles.secondaryText} text-xl font-bold`}>{year}</p>
         </div>
         <motion.button

@@ -1,10 +1,15 @@
 import React from "react";
 import { styles } from "../../styles/styles";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const AboutMe = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/about");
+  };
   return (
     <div
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical}`}
@@ -14,7 +19,7 @@ const AboutMe = () => {
           <img
             src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
-            className="rounded-3xl"
+            className="rounded-3xl animate"
           />
         </div>
         <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-4 xl:pr-16">
@@ -51,6 +56,7 @@ const AboutMe = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className="font-medium text-xl flex justify-center items-center gap-x-1"
+            onClick={handleNavigate}
           >
             About Me <FiArrowRight />
           </motion.button>
