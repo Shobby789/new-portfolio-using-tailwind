@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-col gap-y-4 z-10 animate">
+    <div className="flex flex-col gap-y-4 z-10">
       <img src={project?.imageUrl} alt="" className="rounded-3xl" />
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-y-2">
