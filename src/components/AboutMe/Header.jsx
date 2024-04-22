@@ -4,6 +4,7 @@ import { styles } from "../../styles/styles";
 const Header = () => {
   return (
     <div
+      id="portfolio-header"
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col items-start justify-center gap-y-6`}
     >
       <h6 className="text-2xl font-bold">About Me</h6>
