@@ -1,6 +1,9 @@
+import { Project1 } from "../assets/export";
+
 export const projects = [
   {
     id: 1,
+    // imageUrl: Project1,
     imageUrl:
       "https://img.freepik.com/free-vector/vector-banner-responsive-web-design_107791-8072.jpg?t=st=1711596860~exp=1711600460~hmac=5183b38b874e517518aee84ebfa8068007a9713e398361b9b2c9dbfaf07cf8a7&w=900",
     title: "Sportly",

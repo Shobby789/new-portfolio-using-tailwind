@@ -12,7 +12,7 @@ const CertificateAccordion = ({ title, year, description }) => {
   return (
     <div className="w-full flex flex-col gap-y-2 border-b py-4">
       <div
-        className="w-full flex justify-between items-center cursor-pointer transition-all duration-300"
+        className="w-full flex justify-between items-center cursor-pointer transition-all duration-500"
         onClick={handleShowAccordion}
       >
         <div className="flex flex-col gap-y-2">

@@ -1,7 +1,7 @@
 import React from "react";
 import { styles } from "../../styles/styles";
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa6";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -30,7 +30,7 @@ const Footer = () => {
             About
           </Link>
           <Link to="/portfolio" className="text-lg font-medium underline">
-            Porftfolio
+            Portfolio
           </Link>
           <Link to="/contact" className="text-lg font-medium underline">
             Contact
@@ -41,7 +41,7 @@ const Footer = () => {
             <FaFacebook className="text-white w-5 h-5" />
           </Link>
           <Link to="/about" className="text-lg font-medium">
-            <FaTwitter className="text-white w-5 h-5" />
+            <FaInstagram className="text-white w-5 h-5" />
           </Link>
           <Link to="/portfolio" className="text-lg font-medium">
             <FaLinkedin className="text-white w-5 h-5" />

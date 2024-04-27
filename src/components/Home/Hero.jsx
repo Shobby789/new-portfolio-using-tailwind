@@ -15,7 +15,7 @@ const Hero = () => {
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col gap-y-6 md:gap-y-12`}
     >
       <h1 className="text-4xl md:text-8xl font-bold">
-        I'm a web developer with a passion to create{" "}
+        I'm a web designer and developer with a passion to create{" "}
         <span className={`${styles.secondaryText}`}>great experiences</span>
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-3 md:gap-y-0">
@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
         <div className="col-span-8 leading-6">
           <p className={`${styles.darkSecondaryText} font-medium text-lg`}>
-            A focused MERN Stack Developer building the Frontend and Backend of
+            A focused Full Stack Developer building the Frontend and Backend of
             Websites and Web Applications that leads to the success of the
-            overall product
+            overall product.
           </p>
         </div>
       </div>
