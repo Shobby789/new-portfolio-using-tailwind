@@ -12,14 +12,16 @@ const Experience = () => {
       <div className="w-full">
         <div className="border-b border-t py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
-            <p className="text-[22px] md:text-3xl font-bold">Web Developer</p>
+            <p className="text-[22px] md:text-3xl font-semibold">
+              Web Developer
+            </p>
             <p className={`text-lg font-semibold`}>LaunchBox Pakistan</p>
           </div>
           <p className={`text-lg font-semibold`}>March 2024 - Present</p>
         </div>
         <div className="border-b py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
-            <p className="text-[22px] md:text-3xl font-bold">
+            <p className="text-[22px] md:text-3xl font-semibold">
               Junior Software Engineer Internee
             </p>
             <p className={`text-lg font-semibold`}>Regex Dot Private Limited</p>
@@ -28,7 +30,7 @@ const Experience = () => {
         </div>
         <div className="border-b py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
-            <p className="text-[22px] md:text-3xl font-bold">
+            <p className="text-[22px] md:text-3xl font-semibold">
               React Developer Internee
             </p>
             <p className={`text-lg font-semibold`}>Internee.pk</p>

@@ -12,7 +12,7 @@ const Education = () => {
       <div className="w-full">
         <div className="border-b border-t py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
-            <p className="text-[22px] md:text-3xl font-bold">
+            <p className="text-[22px] md:text-3xl font-semibold">
               Bachelor of Computer Science
             </p>
             <p className={`text-lg font-semibold`}>
@@ -23,7 +23,9 @@ const Education = () => {
         </div>
         <div className="border-b py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
-            <p className="text-[22px] md:text-3xl font-bold">Intermediate</p>
+            <p className="text-[22px] md:text-3xl font-semibold">
+              Intermediate
+            </p>
             <p className={`text-lg font-semibold`}>
               Government Boys Degree College Larkana
             </p>
@@ -32,7 +34,9 @@ const Education = () => {
         </div>
         <div className="border-b py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
-            <p className="text-[22px] md:text-3xl font-bold">Matriculation</p>
+            <p className="text-[22px] md:text-3xl font-semibold">
+              Matriculation
+            </p>
             <p className={`text-lg font-semibold`}>
               Government Pilot Higher Secondary School Larkana
             </p>

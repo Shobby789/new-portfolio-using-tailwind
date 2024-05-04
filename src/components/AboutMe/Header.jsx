@@ -9,8 +9,9 @@ const Header = () => {
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col items-start justify-center gap-y-6`}
     >
       <h6 className="text-xl font-semibold">About Me</h6>
-      <h1 className="text-4xl md:text-7xl font-bold">
-        Hey I am Shoaib Muhammad
+      <h1 className="text-4xl md:text-8xl font-bold">
+        <span className={`${styles.secondaryText}`}>Hey</span> I am Shoaib
+        Muhammad
       </h1>
       <p className={`font-normal text-lg`}>
         I'm a <span className={`font-semibold`}>MERN Stack Developer</span>{" "}
