@@ -16,8 +16,8 @@ const CertificateAccordion = ({ title, year, description }) => {
         onClick={handleShowAccordion}
       >
         <div className="flex flex-col gap-y-2">
-          <h3 className="text-[22px] md:text-2xl font-bold">{title}</h3>
-          <p className={`${styles.secondaryText} text-xl font-bold`}>{year}</p>
+          <h3 className="text-[22px] md:text-2xl font-semibold">{title}</h3>
+          <p className={`text-lg font-medium`}>{year}</p>
         </div>
         <motion.button
           onClick={handleShowAccordion}
@@ -32,9 +32,7 @@ const CertificateAccordion = ({ title, year, description }) => {
         </motion.button>
       </div>
       {showAccordion && (
-        <div
-          className={`transition-all duration-300 text-lg font-normal ${styles.secondaryText}`}
-        >
+        <div className={`transition-all duration-300 text-lg font-normal`}>
           Some placeholder content for the collapse component. This panel is
           hidden by default but revealed when the user activates the relevant
           trigger.

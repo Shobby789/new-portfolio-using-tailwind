@@ -6,7 +6,7 @@ const ContactHeader = () => {
     <div
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col items-start justify-center gap-y-6`}
     >
-      <h6 className="text-2xl font-bold">Contact Me</h6>
+      <h6 className="text-xl font-semibold">Contact Me</h6>
       <h1 className="text-4xl md:text-7xl font-bold">
         <span className={`${styles.secondaryText}`}>Say Hi!</span> and tell me
         about your idea

@@ -6,8 +6,8 @@ const Header = () => {
     <div
       className={`w-full ${styles.paddingHorizontal} pt-28 flex flex-col items-start justify-center gap-y-6`}
     >
-      <h6 className="text-2xl font-bold">My Works</h6>
-      <h1 className="text-4xl md:text-7xl font-bold">
+      <h6 className="text-xl font-semibold">My Works</h6>
+      <h1 className="text-4xl md:text-8xl font-bold">
         Creating unforgettable{" "}
         <span className={`${styles.secondaryText}`}>digital impressions</span>
       </h1>

@@ -24,13 +24,13 @@ const Navbar = () => {
     <div
       className={`w-full fixed bg-white py-4 flex justify-between items-center ${styles.paddingHorizontal} z-30`}
     >
-      <Link to="/" className="text-xl md:text-2xl font-semibold">
+      <Link to="/" className="text-base md:text-xl font-bold">
         Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
       </Link>
       <div className="flex items-center gap-x-2 md:gap-x-6">
         <motion.button
           onClick={() => navigate("/contact")}
-          className="border-2 border-black hidden md:flex items-center justify-center gap-x-1 rounded-full px-2 md:px-6 md:py-2 text-sm md:text-lg font-semibold hover:bg-black hover:text-white"
+          className="border border-black hidden md:flex items-center justify-center gap-x-1 rounded-full px-2 md:px-6 md:py-2 text-sm md:text-lg font-semibold hover:bg-black hover:text-white"
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
@@ -38,7 +38,7 @@ const Navbar = () => {
         </motion.button>
         <button
           onClick={handleShowSidebar}
-          className="border-2 border-black rounded-xl md:rounded-3xl px-3 md:px-6 py-2 md:py-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300"
+          className="border border-black rounded-3xl px-4 md:px-6 py-2 md:py-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300"
         >
           <HiMenu className="text-xl md:text-2xl" />
         </button>
@@ -51,7 +51,7 @@ const Navbar = () => {
       >
         <div
           ref={sideRef}
-          className={`h-full bg-white w-3/5 md:w-2/5 relative shadow-xl p-4 z-50`}
+          className={`h-full bg-black text-white w-3/5 md:w-1/5 relative shadow-xl p-4 z-50`}
         >
           <button onClick={handleShowSidebar}>
             <IoClose className="text-2xl" />

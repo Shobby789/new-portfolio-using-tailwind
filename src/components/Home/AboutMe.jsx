@@ -29,8 +29,9 @@ const AboutMe = () => {
             Design that sparks engagement and inpires action
           </h2>
           <div className="flex flex-col items-start justify-center gap-y-2">
-            <p className={`${styles.darkSecondaryText} font-medium text-lg`}>
-              I'm a <span className={`font-bold`}>Full Stack Developer</span>{" "}
+            <p className={`${styles.darkSecondaryText} font-normal text-lg`}>
+              I'm a{" "}
+              <span className={`font-semibold`}>Full Stack Developer</span>{" "}
               building the Front-end and Back-end of Websites and Web
               Applications that lead to the success of the overall product.
               Check out some of my works in the Projects section.
@@ -47,25 +48,24 @@ const AboutMe = () => {
               <span className={`font-bold`}>LaunchBox Pakistan.</span>
             </p> */}
             <p
-              className={`${styles.darkSecondaryText} font-medium text-lg leading-6`}
+              className={`${styles.darkSecondaryText} font-normal text-lg leading-6`}
             >
-              I'm open to <span className={` font-bold`}>Job</span>{" "}
+              I'm open to <span className={` font-normal`}>Job</span>{" "}
               opportunities where I can contribute, learn and grow. If you have
               a good opportunity that matches my skills and experience then
               don't hesitate to{" "}
-              <Link to="/contact" className={`font-bold`}>
+              <Link to="/contact" className={`font-semibold`}>
                 Contact me.
               </Link>
             </p>
           </div>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="font-medium text-xl flex justify-center items-center gap-x-1"
+          <Link
+            to="/about"
+            className="font-medium text-lg flex justify-center items-center gap-x-1 hover:text-slate-400 transition-all duration-200"
             onClick={handleNavigate}
           >
             About Me <FiArrowRight />
-          </motion.button>
+          </Link>
         </div>
       </div>
     </div>

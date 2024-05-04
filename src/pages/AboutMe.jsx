@@ -4,15 +4,17 @@ import Services from "../components/AboutMe/Services";
 import Experience from "../components/AboutMe/Experience";
 import Education from "../components/AboutMe/Education";
 import Skills from "../components/AboutMe/Skills";
+import CertificatesSection from "../components/Home/CertificatesSection";
 
 const AboutMe = () => {
   return (
     <>
       <Header />
+      <Experience />
       <Skills />
       <Services />
-      <Experience />
       <Education />
+      <CertificatesSection title={"My Certificates"} />
     </>
   );
 };

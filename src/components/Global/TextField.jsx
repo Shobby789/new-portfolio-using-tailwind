@@ -4,7 +4,7 @@ import { styles } from "../../styles/styles";
 const TextField = ({ htmlFor, label, type, name, value, placeholder }) => {
   return (
     <div className="w-full flex flex-col gap-y-1">
-      <label htmlFor={htmlFor} className="text-xl font-bold">
+      <label htmlFor={htmlFor} className="text-lg font-semibold">
         {label}
       </label>
       <input
@@ -14,7 +14,7 @@ const TextField = ({ htmlFor, label, type, name, value, placeholder }) => {
         name={name}
         // value={value}
         placeholder={placeholder}
-        className={`outline-none border-b-2 py-3 text-lg md:text-xl font-medium ${styles.secondaryText}`}
+        className={`outline-none border-b-2 py-3 text-base md:text-lg font-normal`}
       />
     </div>
   );

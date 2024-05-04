@@ -17,10 +17,8 @@ const Experience = () => {
               <h4 className={`${styles.secondaryText} font-bold text-2xl`}>
                 {experience.company_name}
               </h4>
-              <p className="text-xl font-bold">{experience.designation}</p>
-              <p className={`${styles.secondaryText} font-bold text-lg`}>
-                {experience.year}
-              </p>
+              <p className="text-xl font-semibold">{experience.designation}</p>
+              <p className={`font-normal text-lg`}>{experience.year}</p>
             </div>
           );
         })}

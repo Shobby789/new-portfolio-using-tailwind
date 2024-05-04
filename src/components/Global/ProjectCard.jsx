@@ -11,9 +11,7 @@ const ProjectCard = ({ project }) => {
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-y-2">
           <h4 className="font-semibold text-2xl">{project?.title}</h4>
-          <p className={`${styles.secondaryText} text-xl font-medium`}>
-            {project?.description}
-          </p>
+          <p className={`text-lg font-normal`}>{project?.description}</p>
         </div>
         <Link to="/" className="z-0">
           <motion.button

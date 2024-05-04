@@ -2,13 +2,14 @@ import React from "react";
 import { styles } from "../../styles/styles";
 import CertificateAccordion from "./CertificateAccordion";
 
-const CertificatesSection = () => {
+const CertificatesSection = ({ title }) => {
   return (
     <div
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
       <h2 className="text-3xl md:text-6xl font-bold flex flex-wrap">
-        Discover my certificates
+        
+        {title}
       </h2>
       <div className="w-full flex flex-col">
         <CertificateAccordion

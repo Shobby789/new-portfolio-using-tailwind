@@ -4,7 +4,7 @@ import ProjectCard from "../Global/ProjectCard";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { projects } from "../../constants/projects";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -25,14 +25,12 @@ const Projects = () => {
         })}
       </div>
       <div className="w-full flex justify-center">
-        <motion.button
-          className="flex items-center justify-center gap-x-1 rounded-full px-3 md:px-6 py-4 text-lg md:text-lg font-semibold"
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          onClick={handleNavigate}
+        <Link
+          to="/portfolio"
+          className="flex items-center justify-center gap-x-1 text-lg font-semibold hover:text-slate-400 transition-all duration-200"
         >
           View All Projects <FiArrowRight className="text-xl" />
-        </motion.button>
+        </Link>
       </div>
     </div>
   );

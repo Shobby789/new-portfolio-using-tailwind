@@ -6,14 +6,14 @@ import Experience from "../components/Home/Experience";
 import CertificatesSection from "../components/Home/CertificatesSection";
 
 const Home = () => {
-  useEffect(()=>{})
+  useEffect(() => {});
   return (
     <>
       <Hero />
       <AboutMe />
       <Projects />
       <Experience />
-      <CertificatesSection />
+      <CertificatesSection title={"Discover my certificates"} />
     </>
   );
 };

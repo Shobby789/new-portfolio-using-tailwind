@@ -37,7 +37,7 @@ const ContactForm = () => {
         placeholder={"Your company or website"}
       />
       <div className="w-full flex flex-col">
-        <label htmlFor={"message"} className="text-xl font-bold">
+        <label htmlFor={"message"} className="text-lg font-semibold">
           Message
         </label>
         <textarea
@@ -46,7 +46,7 @@ const ContactForm = () => {
           cols="30"
           rows="10"
           placeholder="I want to build some..."
-          className={`outline-none border-b-2 py-3 text-xl font-medium ${styles.secondaryText}`}
+          className={`outline-none border-b-2 py-3 text-base md:text-lg font-normal`}
         ></textarea>
       </div>
       <div className="w-full flex justify-end items-center py-6 md:pt-0">
