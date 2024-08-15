@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="col-span-8 leading-6">
           <p className={`${styles.darkSecondaryText} font-normal text-xl`}>
             A focused Full Stack Developer building the Frontend and Backend of
-            Websites and Web Applications that leads to the success of the
+            Websites and Web Applications that lead to the success of the
             overall product.
           </p>
         </div>

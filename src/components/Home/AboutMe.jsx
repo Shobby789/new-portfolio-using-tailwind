@@ -17,10 +17,16 @@ const AboutMe = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-y-0">
         <div className="col-span-12 md:col-span-5 md:pr-16 flex justify-center">
-          <img
+          {/* <img
             src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             className="rounded-3xl"
+          /> */}
+          {/* <img src="/emoji.jpg" alt="" /> */}
+          <img
+            src="/vecteezy_thumbs-up-2d-cartoon-illustraton-on-white-background-high_30694166.jpg"
+            alt=""
+            className="object-cover"
           />
           {/* <img src={AboutImg} alt="" className="lg:h-[80vh] 2xl:h-[50vh]" /> */}
         </div>

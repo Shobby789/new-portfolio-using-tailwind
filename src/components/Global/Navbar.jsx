@@ -22,11 +22,27 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`w-full fixed bg-white py-4 flex justify-between items-center ${styles.paddingHorizontal} z-30`}
+      className={`w-full fixed bg-white py-3 md:py-6 flex justify-between items-center ${styles.paddingHorizontal} z-30`}
     >
-      <Link to="/" className="text-base md:text-xl font-bold">
-        Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
-      </Link>
+      <div className="">
+        <Link to="/" className="text-base md:text-xl font-bold">
+          Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
+        </Link>
+      </div>
+      {/* <div className="hidden lg:flex items-start justify-end gap-8">
+        <Link to="/" className="text-base font-semibold">
+          Home
+        </Link>
+        <Link to="/about" className="text-base font-semibold">
+          About
+        </Link>
+        <Link to="/portfolio" className="text-base font-semibold">
+          Portfolio
+        </Link>
+        <Link to="/contact" className="text-base font-semibold">
+          Contact
+        </Link>
+      </div> */}
       <div className="flex items-center gap-x-2 md:gap-x-6">
         <motion.button
           onClick={() => navigate("/contact")}
@@ -38,35 +54,41 @@ const Navbar = () => {
         </motion.button>
         <button
           onClick={handleShowSidebar}
-          className="border border-black rounded-3xl px-4 md:px-6 py-2 md:py-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300"
+          className="border border-black rounded-3xl px-4 md:px-6 py-2 md:py-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:block"
         >
           <HiMenu className="text-xl md:text-2xl" />
         </button>
       </div>
+      <button
+        onClick={handleShowSidebar}
+        className="rounded-3xl px-4 md:px-6 py-2 md:py-[10px] lg:hidden bg-white hover:bg-black hover:text-white transition-all duration-300"
+      >
+        <HiMenu className="text-xl md:text-2xl" />
+      </button>
       <div
-        className={`bg-transparent w-full flex justify-end fixed top-0 right-0 z-50 h-[100vh] transition-all duration-500 ${
+        className={`bg-transparent w-full flex justify-end fixed top-4 right-0 2xl:right-36 2xl:top-4 z-50 px-6 lg:px-20 pt-12 lg:pt-20 transition-all duration-500 ${
           showSidebar ? "translate-x-0" : "translate-x-full"
         }`}
         onClick={handleShowSidebar}
       >
         <div
           ref={sideRef}
-          className={`h-full bg-black text-white w-3/5 md:w-1/5 relative shadow-xl p-4 z-50`}
+          className={`h-auto bg-black text-white w-3/5 md:w-1/5 relative shadow-xl p-6 2xl:p-10 z-50 rounded-xl`}
         >
-          <button onClick={handleShowSidebar}>
+          {/* <button onClick={handleShowSidebar}>
             <IoClose className="text-2xl" />
-          </button>
-          <div className="pt-6 px-1 w-full flex flex-col items-start justify-start gap-y-4">
-            <Link to="/" className="text-lg font-semibold">
+          </button> */}
+          <div className="px-1 w-full flex flex-col items-start justify-start gap-y-4 2xl:gap-6">
+            <Link to="/" className="text-base font-semibold">
               Home
             </Link>
-            <Link to="/about" className="text-lg font-semibold">
+            <Link to="/about" className="text-base font-semibold">
               About
             </Link>
-            <Link to="/portfolio" className="text-lg font-semibold">
+            <Link to="/portfolio" className="text-base font-semibold">
               Portfolio
             </Link>
-            <Link to="/contact" className="text-lg font-semibold">
+            <Link to="/contact" className="text-base font-semibold">
               Contact
             </Link>
           </div>
