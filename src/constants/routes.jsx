@@ -19,7 +19,7 @@ export const routes = [
   },
   {
     titke: "Portfolio Page",
-    url: "/portfolio",
+    url: "/projects",
     page: <Layout children={<Portfolio />} />,
   },
   {

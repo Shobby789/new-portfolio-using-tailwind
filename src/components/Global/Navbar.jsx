@@ -65,33 +65,44 @@ const Navbar = () => {
       >
         <HiMenu className="text-xl md:text-2xl" />
       </button>
+
       <div
-        className={`bg-transparent w-full flex justify-end fixed top-4 right-0 2xl:right-36 2xl:top-4 z-50 px-6 lg:px-20 pt-12 lg:pt-20 transition-all duration-500 ${
+        className={`w-full bg-transparent absolute inset-0 h-screen ${
           showSidebar ? "translate-x-0" : "translate-x-full"
-        }`}
+        } transition-all duration-700`}
         onClick={handleShowSidebar}
       >
-        <div
-          ref={sideRef}
-          className={`h-auto bg-black text-white w-3/5 md:w-1/5 relative shadow-xl p-6 2xl:p-10 z-50 rounded-xl`}
-        >
-          {/* <button onClick={handleShowSidebar}>
-            <IoClose className="text-2xl" />
-          </button> */}
-          <div className="px-1 w-full flex flex-col items-start justify-start gap-y-4 2xl:gap-6">
-            <Link to="/" className="text-base font-semibold">
-              Home
-            </Link>
-            <Link to="/about" className="text-base font-semibold">
-              About
-            </Link>
-            <Link to="/portfolio" className="text-base font-semibold">
-              Portfolio
-            </Link>
-            <Link to="/contact" className="text-base font-semibold">
-              Contact
-            </Link>
-          </div>
+        <div className="h-full w-[40%] bg-black shadow-2xl float-end flex flex-col justify-center items-start gap-8 px-12">
+          <button
+            onClick={handleShowSidebar}
+            className="absolute top-6 right-20 bg-black text-white transition-all duration-300"
+          >
+            <IoClose className="text-xl md:text-2xl 2xl:text-4xl" />
+          </button>
+          <Link
+            to={"/"}
+            className="text-white font-bold text-3xl md:text-5xl xl:text-7xl 2xl:text-9xl opacity-90 hover:text-slate-400 transition-all duration-300"
+          >
+            Home
+          </Link>
+          <Link
+            to={"/about"}
+            className="text-white font-bold text-3xl md:text-5xl xl:text-7xl 2xl:text-9xl opacity-90 hover:text-slate-400 transition-all duration-300"
+          >
+            About me
+          </Link>
+          <Link
+            to={"/projects"}
+            className="text-white font-bold text-3xl md:text-5xl xl:text-7xl 2xl:text-9xl opacity-90 hover:text-slate-400 transition-all duration-300"
+          >
+            Projects
+          </Link>
+          <Link
+            to={"/contact"}
+            className="text-white font-bold text-3xl md:text-5xl xl:text-7xl 2xl:text-9xl opacity-90 hover:text-slate-400 transition-all duration-300"
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </div>

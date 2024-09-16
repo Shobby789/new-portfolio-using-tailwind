@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {/* <ThemeToggler /> */}
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Routes>
           {routes.map((route, index) => {

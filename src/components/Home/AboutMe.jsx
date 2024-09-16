@@ -16,19 +16,13 @@ const AboutMe = () => {
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical}`}
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-y-0">
-        <div className="col-span-12 md:col-span-5 md:pr-16 flex justify-center">
+        <div className="col-span-12 md:col-span-5 md:pr-16 flex justify-start">
           {/* <img
-            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-            className="rounded-3xl"
-          /> */}
-          {/* <img src="/emoji.jpg" alt="" /> */}
-          <img
             src="/vecteezy_thumbs-up-2d-cartoon-illustraton-on-white-background-high_30694166.jpg"
             alt=""
             className="object-cover"
-          />
-          {/* <img src={AboutImg} alt="" className="lg:h-[80vh] 2xl:h-[50vh]" /> */}
+          /> */}
+          <img src="/sign-up-mockup.webp" alt="" className="object-cover" />
         </div>
         <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-6 xl:pr-16">
           <h2 className="text-3xl md:text-6xl font-bold">
@@ -41,18 +35,7 @@ const AboutMe = () => {
               building the Front-end and Back-end of Websites and Web
               Applications that lead to the success of the overall product.
               Check out some of my works in the Projects section.
-              {/* Currently I'm
-              working as a full time{" "}
-              <span className={`font-bold`}>Web Developer</span> at{" "}
-              <span className={`font-bold`}>LaunchBox Pakistan.</span> */}
             </p>
-            {/* <p
-              className={`${styles.darkSecondaryText} font-medium text-lg leading-6`}
-            >
-              Currently I'm working as a full time{" "}
-              <span className={`font-bold`}>Web Developer</span> at{" "}
-              <span className={`font-bold`}>LaunchBox Pakistan.</span>
-            </p> */}
             <p
               className={`${styles.darkSecondaryText} font-normal text-lg leading-6`}
             >
