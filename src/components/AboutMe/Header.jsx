@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div
+    <section
       id="portfolio-header"
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col items-start justify-center gap-y-6`}
     >
@@ -33,7 +33,7 @@ const Header = () => {
           Contact me.
         </Link>
       </p>
-    </div>
+    </section>
   );
 };
 

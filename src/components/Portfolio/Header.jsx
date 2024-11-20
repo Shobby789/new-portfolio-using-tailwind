@@ -3,7 +3,7 @@ import { styles } from "../../styles/styles";
 
 const Header = () => {
   return (
-    <div
+    <section
       className={`w-full ${styles.paddingHorizontal} pt-28 flex flex-col items-start justify-center gap-y-6`}
     >
       <h6 className="text-xl font-semibold">My Works</h6>
@@ -11,7 +11,7 @@ const Header = () => {
         Creating unforgettable{" "}
         <span className={`${styles.secondaryText}`}>digital impressions</span>
       </h1>
-    </div>
+    </section>
   );
 };
 

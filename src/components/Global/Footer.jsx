@@ -2,13 +2,12 @@ import React from "react";
 import { styles } from "../../styles/styles";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       className={`w-full bg-black text-white ${styles.paddingHorizontal} py-8 md:py-16 lg:pt-24 lg:pb-20 flex flex-col gap-y-12`}
     >
       <h2 className="uppercase text-3xl md:text-3xl font-medium">
@@ -21,7 +20,7 @@ const Footer = () => {
         shoaibmuhammad.dev<span className="text-white">@gmail.com</span>
       </a>
       <hr />
-      <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-y-0 p-0">
+      <section className="w-full grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-y-0 p-0">
         <div className="col-span-12 md:col-span-6 flex items-center justify-start p-0 gap-x-4 md:gap-x-12">
           <Link to="/" className="text-lg font-medium underline">
             Home
@@ -50,11 +49,11 @@ const Footer = () => {
             <FaGithub className="text-white w-5 h-5" />
           </Link>
         </div>
-      </div>
+      </section>
       <p className={`text-xl font-medium ${styles.secondaryText}`}>
         Keep up with me if you can!
       </p>
-    </div>
+    </footer>
   );
 };
 

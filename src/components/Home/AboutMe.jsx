@@ -12,20 +12,19 @@ const AboutMe = () => {
     navigate("/about");
   };
   return (
-    <div
+    <section
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical}`}
     >
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-y-0">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-y-0">
         <div className="col-span-12 md:col-span-5 md:pr-16 flex justify-start">
-          {/* <img
-            src="/vecteezy_thumbs-up-2d-cartoon-illustraton-on-white-background-high_30694166.jpg"
-            alt=""
-            className="object-cover"
-          /> */}
-          <img src="/sign-up-mockup.webp" alt="" className="object-cover" />
+          <img
+            src="/about-mockup.webp"
+            alt="profile image"
+            className="object-cover w-full h-[70vh]"
+          />
         </div>
         <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-6 xl:pr-16">
-          <h2 className="text-3xl md:text-6xl font-bold">
+          <h2 className="section-heading">
             Design that sparks engagement and inpires action
           </h2>
           <div className="flex flex-col items-start justify-center gap-y-2">
@@ -56,8 +55,8 @@ const AboutMe = () => {
             About Me <FiArrowRight />
           </Link>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

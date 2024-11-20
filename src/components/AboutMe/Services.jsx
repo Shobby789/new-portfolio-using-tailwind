@@ -9,16 +9,14 @@ import { GrDocumentPerformance, GrOptimize } from "react-icons/gr";
 
 const Services = () => {
   return (
-    <div
+    <section
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
-      <h2 className="text-3xl md:text-6xl font-bold flex flex-wrap">
-        Services
-      </h2>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-          <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-            <CgWebsite className="w-8 h-8 block" />
+      <h2 className="section-heading">Services</h2>
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 xl:gap-16">
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex justify-center items-center">
+            <CgWebsite className="w-10 h-10 block" />
           </div>
           <h3 className="font-semibold text-xl">Website Development</h3>
           <p className={`text-start text-base`}>
@@ -26,18 +24,18 @@ const Services = () => {
             MongoDB.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-          <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-            <TfiLayoutCtaCenter className="w-8 h-8 block" />
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex justify-center items-center">
+            <TfiLayoutCtaCenter className="w-10 h-10 block" />
           </div>
           <h3 className="font-semibold text-xl">Responsive Design</h3>
           <p className={`text-start text-base`}>
             Ensuring websites display correctly on all devices and screens.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-          <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-            <RiShoppingCartLine className="w-8 h-8 block" />
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex justify-center items-center">
+            <RiShoppingCartLine className="w-10 h-10 block" />
           </div>
           <h3 className="font-semibold text-xl">E-commerce Solutions</h3>
           <p className={`text-start text-base`}>
@@ -45,18 +43,18 @@ const Services = () => {
             management.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-          <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-            <SiAmazonapigateway className="w-8 h-8 block" />
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex justify-center items-center">
+            <SiAmazonapigateway className="w-10 h-10 block" />
           </div>
           <h3 className="font-semibold text-xl">Custom Web Applications</h3>
           <p className={`text-start text-base`}>
             Tailored software solutions for specific business needs.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-          <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-            <MdOutlineIntegrationInstructions className="w-8 h-8 block" />
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex justify-center items-center">
+            <MdOutlineIntegrationInstructions className="w-10 h-10 block" />
           </div>
           <h3 className="font-semibold text-xl">API Integration</h3>
           <p className={`text-start text-base`}>
@@ -64,17 +62,17 @@ const Services = () => {
             functionality.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-          <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-            <GrDocumentPerformance className="w-8 h-8 block" />
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex justify-center items-center">
+            <GrDocumentPerformance className="w-10 h-10 block" />
           </div>
           <h3 className="font-semibold text-xl">Performance Optimization</h3>
           <p className={`text-start text-base`}>
             Improving website speed and efficiency for better user experience.
           </p>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

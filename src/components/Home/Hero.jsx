@@ -11,14 +11,15 @@ const Hero = () => {
     navigate("/contact");
   };
   return (
-    <div
+    <section
+      id="hero"
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col gap-y-6 md:gap-y-12`}
     >
       <h1 className="text-4xl md:text-8xl font-bold">
         I'm a web developer with a passion to create{" "}
         <span className={`${styles.secondaryText}`}>great experiences</span>
       </h1>
-      <div className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-3 md:gap-y-0">
+      <section className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-3 md:gap-y-0">
         <div className="col-span-4 flex justify-center items-center md:px-4">
           <div className="w-full border border-slate-300"></div>
         </div>
@@ -29,8 +30,9 @@ const Hero = () => {
             overall product.
           </p>
         </div>
-      </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12">
+      </section>
+
+      <section className="w-full grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12">
         <div className="col-span-12 md:col-span-6 flex items-center justify-start gap-x-2 md:gap-x-12">
           <Link
             to="https://www.linkedin.com/"
@@ -64,8 +66,8 @@ const Hero = () => {
             Let's Talk <FiArrowRight />
           </motion.button>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

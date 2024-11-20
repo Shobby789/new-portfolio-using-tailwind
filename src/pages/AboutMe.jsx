@@ -8,21 +8,15 @@ import CertificatesSection from "../components/Home/CertificatesSection";
 
 const AboutMe = () => {
   return (
-    <>
+    <main className="w-full">
       <Header />
       <Experience />
       <Skills />
       <Services />
       <Education />
       <CertificatesSection title={"My Certificates"} />
-    </>
+    </main>
   );
 };
 
 export default AboutMe;
-
-// about me [image, text]
-// services
-// experience
-// education
-// skills

@@ -3,13 +3,11 @@ import { styles } from "../../styles/styles";
 
 const Experience = () => {
   return (
-    <div
+    <section
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
-      <h2 className="text-3xl md:text-6xl font-bold flex flex-wrap">
-        My Experience
-      </h2>
-      <div className="w-full">
+      <h2 className="section-heading">My Experience</h2>
+      <section className="w-full">
         <div className="border-b border-t py-6 w-full flex flex-col md:flex-row justify-start md:justify-between items-start md:items-end">
           <div className="flex flex-col items-start gap-y-3">
             <p className="text-[22px] md:text-3xl font-semibold">
@@ -37,8 +35,8 @@ const Experience = () => {
           </div>
           <p className={`text-lg font-semibold`}>Jul 2023 - Sep 2024</p>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

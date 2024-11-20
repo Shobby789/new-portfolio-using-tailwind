@@ -6,7 +6,6 @@ import Experience from "../components/Home/Experience";
 import CertificatesSection from "../components/Home/CertificatesSection";
 
 const Home = () => {
-  useEffect(() => {});
   return (
     <>
       <Hero />
