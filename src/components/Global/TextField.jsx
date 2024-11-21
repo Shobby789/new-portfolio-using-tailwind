@@ -17,7 +17,7 @@ const TextField = ({
       </label>
       <input
         autoComplete="off"
-        required
+        // required
         type={type}
         name={name}
         value={value}

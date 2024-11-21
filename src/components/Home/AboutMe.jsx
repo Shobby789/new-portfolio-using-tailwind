@@ -11,6 +11,7 @@ const AboutMe = () => {
   const handleNavigate = () => {
     navigate("/about");
   };
+
   return (
     <section
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical}`}
@@ -20,7 +21,7 @@ const AboutMe = () => {
           <img
             src="/about-mockup.webp"
             alt="profile image"
-            className="object-cover w-full h-[70vh]"
+            className="object-cover w-full h-[90vh] 2xl:h-[65vh]"
           />
         </div>
         <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-6 xl:pr-16">

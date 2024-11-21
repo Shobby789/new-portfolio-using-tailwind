@@ -12,6 +12,7 @@ const Projects = () => {
     navigate("/portfolio");
     // navigate("#portfolio-header");
   };
+
   return (
     <section
       id="projects"

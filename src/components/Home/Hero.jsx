@@ -10,6 +10,7 @@ const Hero = () => {
   const handleNavigate = () => {
     navigate("/contact");
   };
+
   return (
     <section
       id="hero"
