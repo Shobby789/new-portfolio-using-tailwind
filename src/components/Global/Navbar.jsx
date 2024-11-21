@@ -61,10 +61,10 @@ const Navbar = () => {
           } transition-all duration-700`}
           onClick={handleShowSidebar}
         >
-          <div className="h-full w-[40%] bg-black shadow-2xl float-end flex flex-col justify-center items-start gap-8 px-12">
+          <div className="h-full w-[80%] bg-black shadow-2xl float-end flex flex-col justify-center items-start gap-8 px-12">
             <button
               onClick={handleShowSidebar}
-              className="absolute top-6 right-20 bg-black text-white transition-all duration-300"
+              className="absolute top-6 right-10 bg-black text-white transition-all duration-300"
             >
               <IoClose className="text-xl md:text-2xl 2xl:text-4xl" />
             </button>
