@@ -28,7 +28,7 @@ const Projects = () => {
       </section>
       <section className="w-full flex justify-center">
         <Link
-          to="/portfolio"
+          to="/projects"
           className="flex items-center justify-center gap-x-1 text-lg font-semibold hover:text-slate-400 transition-all duration-200"
         >
           View All Projects <FiArrowRight className="text-xl" />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-col gap-y-4 z-10 bg-slate-400/10 p-4 rounded-3xl">
+    <div className="flex flex-col gap-y-4 z-10 bg-slate-400/10 p-4 xl:p-6 rounded-3xl">
       <img src={project?.imageUrl} alt="" className="rounded-3xl" />
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-y-2">
@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="border-2 border-black px-6 py-2.5 rounded-3xl hover:bg-black hover:text-white hover:border-white"
+            className="border-2 border-black px-6 py-2 rounded-3xl hover:bg-black hover:text-white hover:border-white"
           >
             <FiArrowUpRight className="text-2xl" />
           </motion.button>
