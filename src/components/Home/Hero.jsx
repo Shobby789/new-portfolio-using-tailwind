@@ -61,7 +61,7 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="flex items-center justify-center gap-x-1 rounded-full py-5 text-xl md:text-lg font-semibold bg-black text-white w-full md:w-48"
+            className="flex items-center justify-center gap-x-1 rounded-full py-3 lg:py-5 text-base md:text-lg font-semibold bg-black text-white w-full md:w-48"
             onClick={handleNavigate}
           >
             Let's Talk <FiArrowRight />

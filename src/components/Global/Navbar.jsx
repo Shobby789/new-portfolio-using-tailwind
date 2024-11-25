@@ -26,7 +26,7 @@ const Navbar = () => {
         className={`w-full fixed bg-white py-3 md:py-6 flex justify-between items-center ${styles.paddingHorizontal} z-30`}
       >
         <div className="">
-          <Link to="/" className="text-base md:text-xl font-bold">
+          <Link to="/" className="text-base md:text-xl font-bold uppercase">
             Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
           </Link>
         </div>
