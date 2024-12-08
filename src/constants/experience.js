@@ -10,8 +10,8 @@ export const experience = [
     year: "2023",
   },
   {
-    company_name: "LaunchBox",
+    company_name: "LaunchBox Pakistan",
     designation: "Web Developer",
-    year: "2023",
+    year: "2023 - Present",
   },
 ];

@@ -13,8 +13,8 @@ const Services = () => {
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
       <h2 className="section-heading">Services</h2>
-      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 xl:gap-16">
-        <div className="flex flex-col items-start gap-4">
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 xl:gap-10">
+        <div className="flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
           <div className="flex justify-center items-center">
             <CgWebsite className="w-10 h-10 block" />
           </div>
@@ -24,7 +24,7 @@ const Services = () => {
             MongoDB.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
           <div className="flex justify-center items-center">
             <TfiLayoutCtaCenter className="w-10 h-10 block" />
           </div>
@@ -33,7 +33,7 @@ const Services = () => {
             Ensuring websites display correctly on all devices and screens.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
           <div className="flex justify-center items-center">
             <RiShoppingCartLine className="w-10 h-10 block" />
           </div>
@@ -43,7 +43,7 @@ const Services = () => {
             management.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
           <div className="flex justify-center items-center">
             <SiAmazonapigateway className="w-10 h-10 block" />
           </div>
@@ -52,7 +52,7 @@ const Services = () => {
             Tailored software solutions for specific business needs.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
           <div className="flex justify-center items-center">
             <MdOutlineIntegrationInstructions className="w-10 h-10 block" />
           </div>
@@ -62,7 +62,7 @@ const Services = () => {
             functionality.
           </p>
         </div>
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
           <div className="flex justify-center items-center">
             <GrDocumentPerformance className="w-10 h-10 block" />
           </div>

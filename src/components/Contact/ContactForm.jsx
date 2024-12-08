@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import TextField from "../Global/TextField";
 import { styles } from "../../styles/styles";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { useFormik } from "formik";
 import MessageReceivedModal from "../Global/MessageReceivedModal";
-import Loader from "../Global/Loader";
+import emailjs from "@emailjs/browser";
 
 const validate = (values) => {
   const errors = {};
@@ -21,11 +21,11 @@ const validate = (values) => {
     errors.email = "Invalid email address";
   }
 
-  if (!values.company) {
-    errors.company = "Required";
-  } else if (values.company.length > 25) {
-    errors.company = "Must be 25 characters or less";
-  }
+  // if (!values.company) {
+  //   errors.company = "Required";
+  // } else if (values.company.length > 25) {
+  //   errors.company = "Must be 25 characters or less";
+  // }
 
   if (!values.message) {
     errors.message = "Required";
@@ -39,28 +39,42 @@ const validate = (values) => {
 const ContactForm = () => {
   const [isSent, setIsSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const form = useRef();
 
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
-      company: "",
+      // company: "",
       message: "",
     },
     validate,
     onSubmit: async (values, { resetForm }) => {
-      // setLoading(true);
-      // setTimeout(() => {
-      //   setIsSent(true);
-      //   setLoading(false);
-      // }, 1000);
+      setLoading(true);
+      setTimeout(() => {
+        setIsSent(true);
+        setLoading(false);
+      }, 1000);
       resetForm();
+      // emailjs
+      //   .sendForm("service_j0rtji8", "template_w1ztp2q", form.current, {
+      //     publicKey: "0utOIbegGwZtEuwiw",
+      //   })
+      //   .then(
+      //     () => {
+      //       console.log("SUCCESS!");
+      //     },
+      //     (error) => {
+      //       console.log("FAILED...", error.text);
+      //     }
+      //   );
     },
   });
 
   return (
     <form
       onSubmit={formik.handleSubmit}
+      // ref={form}
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col items-start justify-center gap-y-6 md:gap-y-12`}
     >
       <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -97,7 +111,7 @@ const ContactForm = () => {
           ) : null}
         </div>
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <TextField
           name={"company"}
           htmlFor={"company"}
@@ -112,7 +126,7 @@ const ContactForm = () => {
             {formik.errors.company}
           </div>
         ) : null}
-      </div>
+      </div> */}
       <div className="w-full flex flex-col">
         <label htmlFor={"message"} className="text-lg font-semibold">
           Message
@@ -144,8 +158,7 @@ const ContactForm = () => {
           Submit <FiArrowRight className="text-xl" />
         </motion.button>
       </div>
-      {/* {loading && <Loader />} */}
-      {isSent && <MessageReceivedModal />}
+      {isSent && <MessageReceivedModal isSent={isSent} setIsSent={setIsSent} />}
     </form>
   );
 };

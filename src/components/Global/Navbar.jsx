@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <header className="w-full">
       <nav
-        className={`w-full fixed bg-white py-3 md:py-6 flex justify-between items-center ${styles.paddingHorizontal} z-30`}
+        className={`w-full fixed bg-white py-3 md:py-6 flex justify-between items-center ${styles.paddingHorizontal} z-20`}
       >
         <div className="">
           <Link to="/" className="text-base md:text-xl font-bold uppercase">

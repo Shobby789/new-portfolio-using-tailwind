@@ -32,7 +32,9 @@ const CertificateAccordion = ({ title, year, description }) => {
         </motion.button>
       </div>
       {showAccordion && (
-        <div className={`transition-all duration-300 text-lg font-normal`}>
+        <div
+          className={`transition-all duration-300 text-sm lg:text-lg font-normal ${styles.secondaryText}`}
+        >
           Some placeholder content for the collapse component. This panel is
           hidden by default but revealed when the user activates the relevant
           trigger.

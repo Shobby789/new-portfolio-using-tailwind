@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col gap-y-6 md:gap-y-12`}
+      className={`w-full ${styles.paddingHorizontal} pt-20 lg:pt-40 2xl:pt-56 pb-12 flex flex-col gap-y-6 md:gap-y-12`}
     >
       <h1 className="text-4xl md:text-8xl font-bold">
         I'm a web developer with a passion to create{" "}
@@ -43,18 +43,25 @@ const Hero = () => {
             LinkedIn <FiArrowUpRight className="text-2xl" />
           </Link>
           <Link
-            to="https://www.linkedin.com/"
+            to="https://www.github.com/"
             target="_blank"
             className="text-lg font-medium uppercase flex items-center justify-center gap-x-1 hover:text-slate-400 transition-all duration-200"
           >
             github <FiArrowUpRight className="text-2xl" />
           </Link>
           <Link
-            to="https://www.linkedin.com/"
+            to="https://www.fiverr.com/"
             target="_blank"
             className="text-lg font-medium uppercase flex items-center justify-center gap-x-1 hover:text-slate-400 transition-all duration-200"
           >
             fiverr <FiArrowUpRight className="text-2xl" />
+          </Link>
+          <Link
+            to="https://www.upwork.com/"
+            target="_blank"
+            className="text-lg font-medium uppercase flex items-center justify-center gap-x-1 hover:text-slate-400 transition-all duration-200"
+          >
+            Upwork <FiArrowUpRight className="text-2xl" />
           </Link>
         </div>
         <div className="col-span-12 md:col-span-6 flex justify-end items-center pt-6 md:pt-0">

@@ -1,18 +1,11 @@
 import React from "react";
 import { styles } from "../../styles/styles";
 import ProjectCard from "../Global/ProjectCard";
-import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import { projects } from "../../constants/projects";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
-  const navigate = useNavigate();
-  const handleNavigate = () => {
-    navigate("/portfolio");
-    // navigate("#portfolio-header");
-  };
-
   return (
     <section
       id="projects"

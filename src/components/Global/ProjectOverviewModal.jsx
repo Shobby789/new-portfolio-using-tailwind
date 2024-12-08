@@ -2,14 +2,14 @@ import React from "react";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
-const MessageReceivedModal = ({ isSent, setIsSent }) => {
+const ProjectOverviewModal = ({ showOverview, setShowOverview }) => {
   return (
-    isSent && (
-      <div className="w-full h-screen z-50 fixed inset-0 bg-[rgba(0,0,0,0.5)] flex items-center justify-center">
-        <div className="w-[440px] h-[240px] bg-white rounded-2xl p-10 flex flex-col items-center justify-center gap-2 relative">
+    showOverview && (
+      <div className="w-full h-screen z-50 fixed inset-0 bg-[rgba(0,0,0,0.2)] flex items-center justify-center overflow-y-scroll">
+        <div className="w-[90%] lg:w-2/3 h-[80vh] bg-white rounded-2xl p-10 flex flex-col items-center justify-center gap-2 relative">
           <button
             type="button"
-            onClick={() => setIsSent(!isSent)}
+            onClick={() => setShowOverview(!showOverview)}
             className="w-6 h-6 rounded-full bg-gray-200 p-1 absolute top-5 right-5"
           >
             <IoClose className="w-full h-full" />
@@ -25,4 +25,4 @@ const MessageReceivedModal = ({ isSent, setIsSent }) => {
   );
 };
 
-export default MessageReceivedModal;
+export default ProjectOverviewModal;

@@ -11,6 +11,7 @@
 
 ::-webkit-scrollbar {
   display: none;
+  /* width: 7px; */
 }
 
 ::-webkit-scrollbar-track {
@@ -26,7 +27,6 @@
 }
 
 /* loader */
-
 .loader {
   width: 120px;
   height: 60px;
@@ -34,7 +34,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: #f7f7f7;
   filter: blur(5px) contrast(10) hue-rotate(60deg);
   mix-blend-mode: darken;
 }
@@ -49,6 +49,7 @@
 .loader:after {
   --s: -1;
 }
+
 @keyframes l3 {
   90%,
   100% {

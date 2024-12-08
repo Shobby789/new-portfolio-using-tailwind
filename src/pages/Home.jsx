@@ -7,13 +7,13 @@ import CertificatesSection from "../components/Home/CertificatesSection";
 
 const Home = () => {
   return (
-    <>
+    <main className="w-full">
       <Hero />
       <AboutMe />
       <Projects />
       <Experience />
       <CertificatesSection title={"Discover my certificates"} />
-    </>
+    </main>
   );
 };
 
