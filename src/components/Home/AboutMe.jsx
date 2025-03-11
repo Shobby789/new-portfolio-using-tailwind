@@ -1,19 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { styles } from "../../styles/styles";
 import { Link, useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import { motion, useInView } from "framer-motion";
 
 const AboutMe = () => {
   const navigate = useNavigate();
-  // const ref = useRef(null);
-  // const isInView = useInView(ref, {
-  //   amount: "all",
-  // });
-
-  // useEffect(() => {
-  //   console.log(`The element is ${isInView} in view`);
-  // }, [isInView]);
 
   const handleNavigate = () => {
     navigate("/about");
@@ -28,13 +19,10 @@ const AboutMe = () => {
           <img
             src="/about-mockup.webp"
             alt="profile image"
-            className="object-cover w-full h-auto lg:h-[90vh] 2xl:h-[65vh]"
+            className="object-cover w-full h-auto"
           />
         </div>
-        <div
-          // ref={ref}
-          className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-6 xl:pr-16"
-        >
+        <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-6 xl:pr-16">
           <h2 className="section-heading">
             Design that sparks engagement and inpires action
           </h2>
