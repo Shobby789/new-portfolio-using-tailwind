@@ -1,0 +1,4 @@
+html,
+body {
+  scroll-snap-type: none; /* or just remove if it's set to 'y mandatory' */
+}

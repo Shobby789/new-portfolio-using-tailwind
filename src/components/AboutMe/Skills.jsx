@@ -10,7 +10,7 @@ const Skills = () => {
         <h2 className="section-heading">My Skills</h2>
       </section>
       <section className={`w-full bg-black ${styles.paddingHorizontal}`}>
-        <section className="w-full h-[100px] lg:h-[150px] overflow-hidden relative">
+        <section className="w-full h-[100px] lg:h-[150px] relative">
           <div className="flex items-center justify-start gap-x-20 animate-scroll">
             {/* row 1 */}
             <img

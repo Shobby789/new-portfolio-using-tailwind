@@ -3,12 +3,13 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ProjectOverviewModal from "./ProjectOverviewModal";
+import AnimatedText from "./AnimatedText";
 
 const ProjectCard = ({ project }) => {
   const [showOverview, setShowOverview] = useState(false);
 
   return (
-    <>
+    <AnimatedText direction="right">
       <div className="flex flex-col gap-y-4 z-10 bg-slate-400/10 p-4 xl:p-6 rounded-3xl">
         <img src={project?.imageUrl} alt="" className="rounded-3xl" />
         <div className="flex items-center justify-between">
@@ -64,7 +65,7 @@ const ProjectCard = ({ project }) => {
         showOverview={showOverview}
         setShowOverview={setShowOverview}
       />
-    </>
+    </AnimatedText>
   );
 };
 

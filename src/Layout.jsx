@@ -4,7 +4,7 @@ import Footer from "./components/Global/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <main className="w-full overflow-x-hidden">
+    <main className="w-full">
       <Navbar />
       <div className="w-full">{children}</div>
       <Footer />

@@ -1,13 +1,16 @@
 import React from "react";
 import { styles } from "../../styles/styles";
 import CertificateAccordion from "./CertificateAccordion";
+import AnimatedText from "../Global/AnimatedText";
 
 const CertificatesSection = ({ title }) => {
   return (
     <section
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
-      <h2 className="section-heading">{title}</h2>
+      <AnimatedText>
+        <h2 className="section-heading">{title}</h2>
+      </AnimatedText>
       <section className="w-full flex flex-col">
         <CertificateAccordion
           title={"Web & Mobile App Development"}
