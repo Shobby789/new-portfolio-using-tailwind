@@ -6,6 +6,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { useFormik } from "formik";
 import MessageReceivedModal from "../Global/MessageReceivedModal";
 import emailjs from "@emailjs/browser";
+import AnimatedText from "../Global/AnimatedText";
 
 const validate = (values) => {
   const errors = {};
@@ -77,7 +78,7 @@ const ContactForm = () => {
       // ref={form}
       className={`w-full ${styles.paddingHorizontal} ${styles.paddingVertical} flex flex-col items-start justify-center gap-y-6 md:gap-y-12`}
     >
-      <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-y-6 gap-x-16">
         <div className="col-span-12 md:col-span-6">
           <TextField
             name={"name"}
@@ -111,52 +112,44 @@ const ContactForm = () => {
           ) : null}
         </div>
       </div>
-      {/* <div className="w-full">
-        <TextField
-          name={"company"}
-          htmlFor={"company"}
-          label={"Company"}
-          type={"text"}
-          value={formik.values.company}
-          onchange={formik.handleChange}
-          placeholder={"Your company or website"}
-        />
-        {formik.errors.company ? (
-          <div className="text-red-500 text-sm mt-1">
-            {formik.errors.company}
-          </div>
-        ) : null}
-      </div> */}
       <div className="w-full flex flex-col">
-        <label htmlFor={"message"} className="text-lg font-semibold">
-          Message
-        </label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          value={formik.values.message}
-          onChange={formik.handleChange}
-          placeholder="I want to build some..."
-          className={`outline-none border-b-2 py-3 text-base md:text-lg font-normal`}
-        ></textarea>
+        <AnimatedText>
+          <label htmlFor={"message"} className="text-lg font-semibold">
+            Message
+          </label>
+        </AnimatedText>
+        <AnimatedText>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            placeholder="I want to build some..."
+            className={`outline-none border-b-2 py-3 text-base md:text-lg font-normal w-full`}
+          ></textarea>
+        </AnimatedText>
         <div className="w-full mt-1 flex items-center justify-between">
           {formik.errors.message ? (
             <div className="text-red-500 text-sm ">{formik.errors.message}</div>
           ) : null}
-          <p className="text-sm text-gray-400">Max 600 characters</p>
+          <AnimatedText>
+            <p className="text-sm text-gray-400">Max 600 characters</p>
+          </AnimatedText>
         </div>
       </div>
       <div className="w-full flex justify-end items-center py-6 md:pt-0">
-        <motion.button
-          type="submit"
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          className="flex items-center justify-center gap-x-2 rounded-full px-3 md:px-6 py-4 text-lg md:text-lg font-semibold bg-black text-white w-40"
-        >
-          Submit <FiArrowRight className="text-xl" />
-        </motion.button>
+        <AnimatedText>
+          <motion.button
+            type="submit"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="flex items-center justify-center gap-x-2 rounded-full px-3 md:px-6 py-4 text-lg md:text-lg font-semibold bg-black text-white w-40"
+          >
+            Submit <FiArrowRight className="text-xl" />
+          </motion.button>
+        </AnimatedText>
       </div>
       {isSent && <MessageReceivedModal isSent={isSent} setIsSent={setIsSent} />}
     </form>

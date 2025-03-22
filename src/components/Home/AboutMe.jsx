@@ -17,11 +17,13 @@ const AboutMe = () => {
     >
       <section className="grid grid-cols-1 md:grid-cols-12 gap-y-6 md:gap-y-0">
         <div className="col-span-12 md:col-span-5 md:pr-16 flex justify-start">
-          <img
-            src="/about-mockup.webp"
-            alt="profile image"
-            className="object-cover w-full h-auto"
-          />
+          <AnimatedText>
+            <img
+              src="/about-mockup.webp"
+              alt="profile image"
+              className="object-cover w-full h-auto"
+            />
+          </AnimatedText>
         </div>
         <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center gap-y-6 xl:pr-16">
           <AnimatedText direction="up">
@@ -53,7 +55,7 @@ const AboutMe = () => {
               </p>
             </AnimatedText>
           </div>
-          <AnimatedText direction="right">
+          <AnimatedText direction="up">
             <Link
               to="/about"
               className="font-medium text-lg flex justify-center items-center gap-x-1 hover:text-slate-400 transition-all duration-200"

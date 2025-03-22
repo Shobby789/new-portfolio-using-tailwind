@@ -23,7 +23,7 @@ const Projects = () => {
         })}
       </section>
       <section className="w-full flex justify-center">
-        <AnimatedText direction="right">
+        <AnimatedText direction="up">
           <Link
             to="/projects"
             className="flex items-center justify-center gap-x-1 text-lg font-semibold hover:text-slate-400 transition-all duration-200"

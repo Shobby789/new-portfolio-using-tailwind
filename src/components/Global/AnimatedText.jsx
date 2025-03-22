@@ -7,7 +7,7 @@ export default function AnimatedText({
   delay = 0.5,
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   // Set animation direction
   const variants = {

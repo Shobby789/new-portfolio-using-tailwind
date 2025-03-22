@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../../constants/projects";
 import ProjectCard from "../Global/ProjectCard";
 import { styles } from "../../styles/styles";
+import AnimatedText from "../Global/AnimatedText";
 
 const ProjectsSection = () => {
   return (
@@ -16,10 +17,15 @@ const ProjectsSection = () => {
         })}
       </section>
       <section className="w-full flex flex-col items-center justify-center gap-y-2 py-6 md:py-8 lg:py-12">
-        <h6 className="text-2xl font-semibold">Have an idea?</h6>
-        <h1 className="text-3xl md:text-6xl font-bold">
-          Let's rock <span className={`${styles.secondaryText}`}>together</span>
-        </h1>
+        <AnimatedText>
+          <h6 className="text-2xl font-semibold">Have an idea?</h6>
+        </AnimatedText>
+        <AnimatedText>
+          <h1 className="text-3xl md:text-6xl font-bold">
+            Let's rock{" "}
+            <span className={`${styles.secondaryText}`}>together</span>
+          </h1>
+        </AnimatedText>
       </section>
     </section>
   );

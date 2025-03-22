@@ -1,19 +1,18 @@
+// ServiceCard.jsx
 import React from "react";
-import { SiAffinitydesigner } from "react-icons/si";
-import { styles } from "../../styles/styles";
-import { TfiLayoutCtaCenter } from "react-icons/tfi";
+import AnimatedText from "../Global/AnimatedText";
 
-const ServiceCard = ({ service }) => {
+const ServiceCard = ({ title, description, Icon }) => {
   return (
-    <div className="flex flex-col items-start gap-3 p-6 rounded-xl border">
-      <div className="flex justify-center items-center bg-gray-100 w-20 h-20 rounded-full">
-        <TfiLayoutCtaCenter className="w-9 h-9 block" />
+    <AnimatedText>
+      <div className="min-h-[240px] flex flex-col items-start gap-4 bg-slate-400/10 p-10 rounded-2xl">
+        <div className="flex justify-center items-center">
+          <Icon className="w-10 h-10 block" />
+        </div>
+        <h3 className="font-semibold text-xl">{title}</h3>
+        <p className="text-start text-base">{description}</p>
       </div>
-      <h3 className="font-semibold text-xl">title</h3>
-      <p className={`${styles.secondaryText} text-start text-base`}>
-        description
-      </p>
-    </div>
+    </AnimatedText>
   );
 };
 

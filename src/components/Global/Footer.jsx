@@ -11,17 +11,19 @@ const Footer = () => {
     <footer
       className={`w-full bg-black text-white ${styles.paddingHorizontal} py-8 md:py-16 lg:pt-24 lg:pb-20 flex flex-col gap-y-12`}
     >
-      <AnimatedText direction="right">
+      <AnimatedText direction="up">
         <h2 className="uppercase text-3xl md:text-3xl font-medium">
           Have an idea? let's connect
         </h2>
       </AnimatedText>
-      <Link
-        className={`text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold ${styles.secondaryText}`}
-        to="mailto:shoaibmuhammad.dev@gmail.com"
-      >
-        shoaibmuhammad.dev<span className="text-white">@gmail.com</span>
-      </Link>
+      <AnimatedText>
+        <Link
+          className={`text-xl md:text-4xl lg:text-5xl xl:text-6xl font-bold ${styles.secondaryText}`}
+          to="mailto:shoaibmuhammad.dev@gmail.com"
+        >
+          shoaibmuhammad.dev<span className="text-white">@gmail.com</span>
+        </Link>
+      </AnimatedText>
       <hr />
       <AnimatedText direction="up">
         <section className="w-full grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-y-0 p-0">

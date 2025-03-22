@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "../../styles/styles";
+import AnimatedText from "../Global/AnimatedText";
 
 const Skills = () => {
   return (
@@ -7,7 +8,9 @@ const Skills = () => {
       className={`w-full ${styles.paddingVertical} flex flex-col gap-y-6 md:gap-y-12`}
     >
       <section className={`${styles.paddingHorizontal}`}>
-        <h2 className="section-heading">My Skills</h2>
+        <AnimatedText>
+          <h2 className="section-heading">My Skills</h2>
+        </AnimatedText>
       </section>
       <section className={`w-full bg-black ${styles.paddingHorizontal}`}>
         <section className="w-full h-[100px] lg:h-[150px] relative">
