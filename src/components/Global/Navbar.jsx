@@ -5,6 +5,7 @@ import { styles } from "../../styles/styles";
 import { FiArrowRight } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import AnimatedText from "./AnimatedText";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -26,27 +27,33 @@ const Navbar = () => {
         className={`w-full fixed bg-white py-3 md:py-6 flex justify-between items-center ${styles.paddingHorizontal} z-20`}
       >
         <div className="">
-          <Link to="/" className="text-base md:text-xl font-bold uppercase">
-            Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
-          </Link>
+          <AnimatedText direction="right">
+            <Link to="/" className="text-base md:text-xl font-bold uppercase">
+              Shoaib <span className={`${styles.secondaryText}`}>Muhammad</span>
+            </Link>
+          </AnimatedText>
         </div>
 
-        <div className="flex items-center gap-x-2 md:gap-x-6">
-          <motion.button
-            onClick={() => navigate("/contact")}
-            className="border border-black hidden md:flex items-center justify-center gap-x-1 rounded-full px-2 md:px-6 md:py-2 text-sm md:text-lg font-semibold hover:bg-black hover:text-white"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            Let's Talk <FiArrowRight className="text-lg" />
-          </motion.button>
-          <button
-            onClick={handleShowSidebar}
-            className="border border-black rounded-3xl px-4 md:px-6 py-2 md:py-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:block"
-          >
-            <HiMenu className="text-xl md:text-2xl" />
-          </button>
-        </div>
+        <AnimatedText direction="left">
+          <div className="flex items-center gap-x-2 md:gap-x-6">
+            <motion.button
+              onClick={() => navigate("/contact")}
+              className="border border-black hidden md:flex items-center justify-center gap-x-1 rounded-full px-2 md:px-6 md:py-2 text-sm md:text-lg font-semibold hover:bg-black hover:text-white"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              Let's Talk <FiArrowRight className="text-lg" />
+            </motion.button>
+            <button
+              onClick={handleShowSidebar}
+              className="border border-black rounded-3xl px-4 md:px-6 py-2 md:py-[10px] bg-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:block"
+            >
+              <HiMenu className="text-xl md:text-2xl" />
+            </button>
+          </div>
+        </AnimatedText>
+
+        {/* mobile menu button */}
         <button
           onClick={handleShowSidebar}
           className="rounded-3xl px-4 md:px-6 py-2 md:py-[10px] lg:hidden bg-white hover:bg-black hover:text-white transition-all duration-300"
