@@ -8,7 +8,7 @@ const ContactHeader = () => {
       className={`w-full ${styles.paddingHorizontal} pt-28 pb-12 flex flex-col items-start justify-center gap-y-6`}
     >
       <AnimatedText direction="right">
-        <h1 className="text-4xl md:text-8xl font-bold">
+        <h1 className="main-heading">
           <span className={`${styles.secondaryText}`}>Say Hi!</span> and tell me
           about your idea
         </h1>

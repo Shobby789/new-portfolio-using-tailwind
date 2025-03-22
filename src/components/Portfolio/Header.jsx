@@ -11,7 +11,7 @@ const Header = () => {
         <h6 className="text-xl font-semibold">My Works</h6>
       </AnimatedText>
       <AnimatedText direction="left">
-        <h1 className="text-4xl md:text-8xl font-bold">
+        <h1 className="main-heading">
           Creating unforgettable{" "}
           <span className={`${styles.secondaryText}`}>digital impressions</span>
         </h1>

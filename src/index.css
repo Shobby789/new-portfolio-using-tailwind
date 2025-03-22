@@ -76,9 +76,13 @@
 }
 
 .section-heading {
-  @apply text-3xl md:text-6xl 2xl:text-[58px] 2xl:leading-[64px] font-bold 2xl:font-extrabold uppercase;
+  @apply text-3xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:leading-[64px] font-bold 2xl:font-extrabold uppercase;
 }
 
 h1 {
   @apply uppercase;
+}
+
+.main-heading {
+  @apply text-4xl md:text-7xl xl:text-8xl font-bold;
 }

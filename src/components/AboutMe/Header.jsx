@@ -13,7 +13,7 @@ const Header = () => {
         <h6 className="text-xl font-semibold">About Me</h6>
       </AnimatedText>
       <AnimatedText direction="right">
-        <h1 className="text-4xl md:text-8xl font-bold">
+        <h1 className="main-heading">
           <span className={`${styles.secondaryText}`}>Hey</span> I am Shoaib
           Muhammad
         </h1>
